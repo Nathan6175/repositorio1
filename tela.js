@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Previsao } from './previsao';
 import { Vento } from './vento';
 import { Sens_termica } from './sens_termica';
@@ -8,10 +8,10 @@ import { Pressao } from './pressao';
 export function Tela() {
     return (
         <View style={styles.container4}>
+
             <View style={styles.container}>
                 <Previsao></Previsao>
             </View>
-
 
             <View style={styles.container2}>
                 <View style={styles.container3}>
@@ -28,7 +28,6 @@ export function Tela() {
                 </View>
             </View>
 
-
         </View>
     );
 }
@@ -38,24 +37,19 @@ const styles = StyleSheet.create({
         color: "rgb(255, 255, 255)",
         flex: 1,
         backgroundColor: "blue",
-        alignItems: "center",
         color: "white",
-        justifyContent: "center",
         borderTopEndRadius:20,
         borderTopLeftRadius:20,
     },
 
     container2: {
         color: "rgb(255, 255, 255)",
-        flex: 1,
         flexWrap: "wrap",
         flexDirection:"row",
         backgroundColor: "blue",
         borderBottomEndRadius:20,
-        borderBottomLeftRadius:20,
-        paddingRight:20,
-        alignItems:"center",
-        alignContent:"center",
+        borderBottomLeftRadius:20
+        
     },
 
     container3: {
@@ -64,14 +58,14 @@ const styles = StyleSheet.create({
         borderColor:"white",
         paddingTop: 10,
         paddingBottom: 10,
-        justifyContent:"space-around",
         alignItems: "center",
-        width: 150,
-        height: 50,
-
+        width: '50%',
+        height: "50%",
     },
     container4:{
-        width: 320,
-        height: 400,
+        paddingLeft:"7.5%",
+        paddingRight:"7.5%",
+        width: '100%',
+        height: "70%",
     }
 });
