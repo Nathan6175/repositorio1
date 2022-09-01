@@ -1,15 +1,19 @@
-import {Text,StyleSheet} from "react-native";
+import { Text, StyleSheet } from "react-native";
 import { View } from "react-native-web";
 
 export function Local() {
-    return(
-        <View style={styles.container}>
-            <Text><b>Bandung</b>, Indonesia</Text>
+    return (
+        <View>
+            <Text style={styles.container}><b>Bandung</b>, Indonesia</Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    container:{
-        padding:12
-    }})
+    container: {
+        paddingTop: "8%",
+        paddingBottom: "8%",
+        paddingLeft: "7.5%",
+        fontSize:20
+    }
+})
